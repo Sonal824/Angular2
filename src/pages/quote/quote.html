@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{person}}</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-card>
+  <ion-card-content>
+  {{text}}
+  </ion-card-content>
+  <ion-row>
+    <ion-col text-center>
+      <button outline ion-button color="danger" (click)="dismiss(true)">Dislike</button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+  <ion-row>
+    <ion-col text-center>
+      <button ion-button (click)="dismiss()" color="danger">Close</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
